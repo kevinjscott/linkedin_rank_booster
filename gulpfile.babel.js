@@ -96,7 +96,7 @@ gulp.task('watch', ['lint', 'babel', 'html'], () => {
     'app/*.html',
     'app/scripts/**/*.js',
     'app/images/**/*',
-    'app/styles/**/*',
+    'app/css/**/*',
     'app/_locales/**/*.json'
   ]).on('change', $.livereload.reload);
 
