@@ -38,8 +38,44 @@
         "js/vendor/d3.v3.min.js",
         "js/vendor/lodash.core.js",
         "js/vendor/jquery.min.js",
+        "js/vendor/moment.js",
         "scripts/other.js",
         "scripts/contentscript.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ,
+    {
+      "matches": [
+        "https://www.linkedin.com/*"
+      ],
+      "css": [
+        "css/extension.css"
+      ],
+      "js": [
+        "js/vendor/lodash.core.js",
+        "js/vendor/jquery.min.js",
+        // "scripts/other.js",
+        "scripts/promote.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ,
+    {
+      "matches": [
+        "https://www.linkedin_.com/profile/*",
+        "https://www.linkedin_.com/in/*"
+      ],
+      "css": [
+        "css/extension.css"
+      ],
+      "js": [
+        "js/vendor/d3.v3.min.js",
+        "js/vendor/lodash.core.js",
+        "js/vendor/jquery.min.js",
+        "scripts/stepbystep.js"
       ],
       "run_at": "document_end",
       "all_frames": false
